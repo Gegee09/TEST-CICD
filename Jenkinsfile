@@ -2,7 +2,7 @@ kpipeline {
     agent any
 
     environment {
-        IMAGE = "dockerhub_user/nginx-ci:latest"
+        IMAGE = "ilhamnurizha/nginx-test:latest"
     }
 
     stages {
