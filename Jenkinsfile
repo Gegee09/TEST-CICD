@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git credentialsId: 'github-creds', url: 'https://github.com/Gegee09/TEST-CICD.git'
+                git branch: 'main', url: 'https://github.com/Gegee09/TEST-CICD.git', credentialsId: 'github-creds'
             }
         }
 
