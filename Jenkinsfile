@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/kamu/repo.git'
+                 git credentialsId: 'github-creds', url: 'https://github.com/Gegee09/TEST-CICD.git'
             }
         }
 
